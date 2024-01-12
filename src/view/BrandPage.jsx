@@ -9,7 +9,6 @@ const BrandPage = () => {
   if (!newData) {
     return (
       <p className="bg-red-500 h-screen justify-center items-center text-4xl">
-        {" "}
         Page Not Found
       </p>
     );
@@ -21,7 +20,8 @@ const BrandPage = () => {
       <Nav/>
         <div className="h-full grow bg-red-400 flex justify-center  items-center text-white font-medium text-xl">
           <div className="flex flex-wrap">
-            <div className={`p-4 rounded ${newData.card_bg}`}>
+            <div className={`p-4  rounded ${newData.card_bg}`}>
+              <img className="h-[200px] w-[260px]" src={newData.img} alt="xyz" />
               <h2>{newData.heading}</h2>
               <p>{newData.para}</p>
             </div>
