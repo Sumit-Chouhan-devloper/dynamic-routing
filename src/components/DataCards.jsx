@@ -16,4 +16,5 @@ const DataCards = ({ id, heading, para, card_bg, img }) => {
   );
 };
 
+
 export default DataCards;
